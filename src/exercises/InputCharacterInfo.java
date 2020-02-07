@@ -13,17 +13,33 @@ public class InputCharacterInfo {
         userEntry = input.next().charAt(0);
 
         System.out.println("The character is " + userEntry);
-        if(Character.isUpperCase(userEntry))
+        if(Character.isUpperCase(userEntry)) {
             System.out.println(userEntry + " is uppercase");
-        else
+        }
+        else {
             System.out.println(userEntry + " is not uppercase");
-        if(Character.isLowerCase(userEntry))
+        }
+        if(Character.isLowerCase(userEntry)) {
             System.out.println(userEntry + " is lowercase");
-        else
+        }
+        else {
             System.out.println(userEntry + " is not lowercase");
+        }
         userEntry = Character.toLowerCase(userEntry);
         System.out.println("After toLowerCase(), the user entry is " + userEntry);
         userEntry = Character.toUpperCase(userEntry);
         System.out.println("After toUpperCase(), the user entry is " + userEntry);
+        if(Character.isLetterOrDigit(userEntry)) {
+            System.out.println(userEntry + " is a letter or digit.");
+        }
+        else {
+            System.out.println(userEntry + " is neither a letter nor a digit");
+        }
+        if(Character.isWhitespace(userEntry)) {
+            System.out.println(userEntry + " is whitespace.");
+        }
+        else {
+            System.out.println(userEntry + " is not whitespace.");
+        }
     }
 }
