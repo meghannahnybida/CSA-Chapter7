@@ -3,7 +3,7 @@ package GameZone;
 public class Cards {
 
     private String suit;
-    private int value;
+    private String value;
 
     public String getSuit()
     {
@@ -13,11 +13,11 @@ public class Cards {
     {
         suit = s;
     }
-    public int getValue()
+    public String getValue()
     {
         return value;
     }
-    public void setValue(int v)
+    public void setValue(String v)
     {
         value = v;
     }

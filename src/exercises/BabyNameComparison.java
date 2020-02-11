@@ -6,23 +6,25 @@ public class BabyNameComparison {
 
     public static void main(String [] args)
     {
-        String name1;
-        String name2;
-        String name3;
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Enter name #1 >> ");
-        name1 = input.nextLine();
-        System.out.print("Enter name #2 >> ");
-        name2 = input.nextLine();
-        System.out.print("Enter name #3 >> ");
-        name3 = input.nextLine();
-
-        System.out.println(name1 + " " + name2);
-        System.out.println(name1 + " " + name3);
-        System.out.println(name2 + " " + name1);
-        System.out.println(name2 + " " + name3);
-        System.out.println(name3 + " " + name1);
-        System.out.println(name3 + " " + name2);
+        String[] names = new String [3];
+        for(int i = 0; i < names.length; i++){
+            Scanner input = new Scanner(System.in);
+            System.out.print("Enter name >> ");
+            names[i] = input.nextLine();
+        }
+        for(int i=0; i<names.length; i++){
+            if(i+1 < names.length){
+                System.out.println(names[i] + " " + names[i+1]);
+            }
+            if(i+2 < names.length){
+                System.out.println(names[i] + " " + names[i+2]);
+            }
+            if(i-1 >= 0){
+                System.out.println(names[i] + " " + names[i-1]);
+            }
+            if(i-2 >= 0){
+                System.out.println(names[i] + " " + names[i-2]);
+            }
+        }
     }
 }
