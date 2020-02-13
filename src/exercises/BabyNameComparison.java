@@ -12,8 +12,8 @@ public class BabyNameComparison {
             System.out.print("Enter name >> ");
             names[i] = input.nextLine();
         }
-        for(int i=0; i<names.length; i++){
-            if(i+1 < names.length){
+        for(int i = 0; i <names.length; i++){
+            if(i + 1 < names.length){
                 System.out.println(names[i] + " " + names[i+1]);
             }
             if(i+2 < names.length){
